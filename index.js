@@ -8,7 +8,16 @@ app.get("/", (req, res) => {
   res.send("GraphQL server woks");
 });
 
-const root = { hello: () => "Hi, I'am Rudi" };
+const root = { friend: () => {
+  return {
+        "id": 1,
+        "firstName": "Rudi",
+        "lastName": "Persson",
+        "gender": "Male",
+        "language": "Faroese",
+        "email": "Rudipersson@gmail.com"
+  }
+} };
 
 app.use(
   "/graphql",
@@ -19,4 +28,8 @@ app.use(
   })
 );
 
-app.listen(8080, () => console.log("Server running on port localhost:8080. For grapqQl: localhost:8080/graphql"));
+app.listen(8080, () =>
+  console.log(
+    "Server running on port localhost:8080. For grapqQl: localhost:8080/graphql"
+  )
+);
