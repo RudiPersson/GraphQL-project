@@ -1,0 +1,19 @@
+{
+  "name": "graphql-project",
+  "version": "1.0.0",
+  "description": "learning by doing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RudiPersson/graphql-project.git"
+  },
+  "author": "Rudi Persson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RudiPersson/graphql-project/issues"
+  },
+  "homepage": "https://github.com/RudiPersson/graphql-project#readme"
+}
