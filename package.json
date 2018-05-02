@@ -4,7 +4,8 @@
   "description": "learning by doing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js --exec babel-node -e js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/RudiPersson/graphql-project/issues"
   },
-  "homepage": "https://github.com/RudiPersson/graphql-project#readme"
+  "homepage": "https://github.com/RudiPersson/graphql-project#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
 }
