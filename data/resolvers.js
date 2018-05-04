@@ -9,8 +9,8 @@ export const resolvers = {
   //   }
   // }
   Query: {
-    getFriend: (root, { id }) => {
-      return new Promise((resolve, reject) => {
+    getOneFriend: (root, { id }) => {
+      return new Promise((resolve, object) => {
         Friends.findById({ _id: id }, (err, friend) => {
           if (err) reject(err + " Friend Id not found");
           else resolve(friend);
